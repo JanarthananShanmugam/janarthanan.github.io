@@ -6,10 +6,13 @@
     <title>Resume</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script>
-        function loadDateTime() {
-            document.getElementById("date").innerHTML = new Date();
-            var refresh = 1000; // Refresh rate in milli seconds
-            mytime = setTimeout('loadDateTime()', refresh)
+        function showDateTime() {
+            var dt = new Date();
+            document.getElementById("datetime").innerHTML = (("0" + dt.getDate()).slice(-2)) + "." + (("0" + (dt
+                    .getMonth() + 1)).slice(-2)) + "." + (dt.getFullYear()) + " " + (("0" + dt.getHours()).slice(-2)) +
+                ":" + (("0" + dt.getMinutes()).slice(-2)) + ":" + (("0" + dt.getSeconds()).slice(-2));
+            var refresh = 1000;
+            mytime = setTimeout('showDateTime()', refresh)
         }
     </script>
     <style>
@@ -33,7 +36,7 @@
 
 </head>
 
-<body onload="loadDateTime()">
+<body onload="showDateTime()" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
 
     <div style="text-align: center; font-family:courier,arial,helvetica;">
         <img src="img/jana.jpg" alt="Avatar" class="avatar">
@@ -90,7 +93,7 @@
             <td>SSLC</td>
             <td>Govt Hr Sec School</td>
             <td>90.6</td>
-            <td>2014</td>
+            <td>2009</td>
         </tr>
 
     </table>
@@ -102,7 +105,7 @@
     <p style="text-align: right;"><b>Place:</b> Kalangani</p>
     <p style="text-align: right;">
         <b>Date:</b>
-        <span id="date">dd-mm-yyyy HH:mm:ss AM/PM</span>
+        <span id="datetime">dd-mm-yyyy></span>
     </p>
 </body>
 
