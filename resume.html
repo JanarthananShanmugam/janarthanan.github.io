@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Resume</title>
+
+    <script>
+        function loadDateTime() {
+            document.getElementById("date").innerHTML = new Date();
+            var refresh = 1000; // Refresh rate in milli seconds
+            mytime = setTimeout('loadDateTime()', refresh)
+        }
+    </script>
+    <style>
+        table,
+        td,
+        th {
+            border: 1px solid black;
+        }
+
+        #table2 {
+            border-collapse: collapse;
+        }
+    </style>
+
+</head>
+
+<body onload="loadDateTime()">
+
+    <div style="text-align: center; font-family:courier,arial,helvetica;">
+        <img src="jana.jpg" height="150" width="150" />
+        <h1>Janarthanan Shanmugam</h1>
+        <h5>
+            <a href="mailto:janarthanan.shanmugam@gmail.com">
+                janarthanan.shanmugam@gmail.com
+            </a>
+        </h5>
+        <h5>Mobile:+917904487944</h5>
+    </div>
+    <hr />
+    <h2>Objective</h2>
+    <p>I want to become a best web developer in inida.</p>
+    <hr />
+    <h2>Skills</h2>
+    <ul>
+        <li>Java</li>
+        <li>Ionic</li>
+        <li>Mysql</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+    <hr />
+    <h2>Education</h2>
+
+    <table id="table2" width="100%">
+        <tr>
+            <th>Course</th>
+            <th>College</th>
+            <th>Percentage</th>
+            <th>Year of Passing</th>
+        </tr>
+        <tr>
+            <td>MCA</td>
+            <td>Muthayammal Engineering College</td>
+            <td>84</td>
+            <td>2016</td>
+        </tr>
+        <tr>
+            <td>BCA</td>
+            <td>Selvamm Arts & Science College</td>
+            <td>64</td>
+            <td>2014</td>
+        </tr>
+        <tr>
+            <td>HSC</td>
+            <td>Govt Hr Sec School</td>
+            <td>80.75</td>
+            <td>2011</td>
+        </tr>
+        <tr>
+            <td>SSLC</td>
+            <td>Govt Hr Sec School</td>
+            <td>90.6</td>
+            <td>2014</td>
+        </tr>
+
+    </table>
+    <hr>
+    <h2>Declation</h2>
+    <p>What ever I have provided above is true to my knowledge.</p>
+    <p style="text-align: right;">Yours Faithfully,</p>
+    <p style="text-align: right;">Janarthanan Shanmugam</p>
+    <p style="text-align: right;"><b>Place:</b> Kalangani</p>
+    <p style="text-align: right;">
+        <b>Date:</b>
+        <span id="date">dd-mm-yyyy HH:mm:ss AM/PM</span>
+    </p>
+</body>
+
+</html>
