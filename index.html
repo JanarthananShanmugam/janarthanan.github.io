@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Resume</title>
+
+    <script>
+        function showDateTime() {
+            var dt = new Date();
+            document.getElementById("datetime").innerHTML = (("0" + dt.getDate()).slice(-2)) + "." + (("0" + (dt
+                    .getMonth() + 1)).slice(-2)) + "." + (dt.getFullYear()) + " " + (("0" + dt.getHours()).slice(-2)) +
+                ":" + (("0" + dt.getMinutes()).slice(-2)) + ":" + (("0" + dt.getSeconds()).slice(-2));
+            // document.getElementById("datetime").innerHTML = new Date();
+            var refresh = 1000;
+            mytime = setTimeout('showDateTime()', refresh)
+        }
+    </script>
+
+    <style>
+        table {
+            border-collapse: collapse;
+            border: 1px solid black;
+            width: 100%;
+            text-align: center;
+            font-size: large;
+            font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
+        }
+
+
+        tr:nth-child(even) {
+            background-color: rgb(170, 170, 247);
+
+        }
+
+        .avatar {
+            vertical-align: middle;
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+        }
+
+        h2 {
+            background-color: rgb(170, 170, 247);
+        }
+    </style>
+</head>
+
+<body onload="showDateTime()">
+
+    <div style="text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';">
+        <img src="img/jana.jpg" alt="Avatar" class="avatar">
+
+        <h1>Janarthanan Shanmugam</h1>
+        <h5>
+            <a href="mailto:janarthanan.shanmugam@gmail.com">
+                janarthanan.shanmugam@gmail.com
+            </a>
+        </h5>
+        <h5>Mobile:(+91)7904487944</h5>
+    </div>
+
+    <h2>Objective</h2>
+    <p>To secure permanent employment with Persistent Systems, where I can utilize my skills and experience to the
+        maximum</p>
+
+    <h2>Work Experience</h2>
+    <h3>Software Trainee at Persistent Systems Pvt. Ltd</h3>
+    <li>Developing Kesar – Expense Tracker Mobile
+        Application.</li>
+    <li>Working on Ionic 5, Angular, TypeScript for Mobile
+        Application.</li>
+    <li>Built website using HTML5, Bootstrap CSS, JavaScrip.</li>
+    <li>Internationalization and Responsible for manual
+        testing of Website and Mobile Application.</li>
+
+    <h2>Skills</h2>
+    <ul>
+        <li>HTML5</li>
+        <li>Ionic</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Angular</li>
+        <li>Node JS</li>
+    </ul>
+    <h2>
+        Education
+    </h2>
+
+    <table>
+        <tr>
+            <th>Course</th>
+            <th>Institution</th>
+            <th>Year of passing</th>
+            <th>Percentage(%)</th>
+        </tr>
+        <tr>
+            <td>MCA</td>
+            <td>Muthayammal Engineering college</td>
+            <td>2017</td>
+            <td>84</td>
+        </tr>
+        <tr>
+            <td>BCA</td>
+            <td>Selvamm college of Arts and Science</td>
+            <td>2015</td>
+            <td>64</td>
+        </tr>
+        <tr>
+            <td>HSC</td>
+            <td>Govt.Hr.Sec.School</td>
+            <td>2011</td>
+            <td>80.75</td>
+        </tr>
+        <tr>
+            <td>SSLC</td>
+            <td>Govt.Hr.Sec.School</td>
+            <td>2009</td>
+            <td>90.6</td>
+        </tr>
+    </table>
+    <h2>Achievements</h2>
+    <li>Java Developer - Active Contributor</li>
+    <li>Participating National Seminar</li>
+    <li>Winner of Cricket Tournament</li>
+    <li>Participation of Debugging</li>
+
+
+    <h2>Declation</h2>
+    <p>I solemnly declare that all the information furnished in this document is free of errors to the best of my
+        knowledge.
+    </p>
+    <p style="text-align: right;"><b>Yours Faithfully,</b></p>
+    <p style="text-align: right;">Janarthanan Shanmugam</p>
+    <p style="text-align: right;"><b>Place:</b> Kalangani</p>
+    <p style="text-align: right;">
+        <b>Date:</b>
+        <span id="datetime">dd-mm-yyyy></span>
+    </p>
+</body>
+
+</html>
