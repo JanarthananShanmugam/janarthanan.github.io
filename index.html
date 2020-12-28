@@ -1,144 +1,390 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-    <title>Resume</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MyResume Bootstrap Template - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-    <script src="https://momentjs.com/downloads/moment.js"></script>
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-    <script>
-        function showDateTime() {
-            document.getElementById("datetime").innerHTML = moment().format('MMM Do YYYY, h:mm:ss a');
-            var refresh = 1000;
-            mytime = setTimeout('showDateTime()', refresh)
-        }
-    </script>
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
-    <style>
-        table,
-        th,
-        td {
-            border-collapse: collapse;
-            border: 1px solid black;
-            font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
-        }
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
 
-        .avatar {
-            vertical-align: middle;
-            width: 75px;
-            height: 75px;
-            border-radius: 50%;
-        }
-
-        h2 {
-            background-color: rgb(170, 170, 247);
-            font-size: 25;
-        }
-
-        .right {
-            text-align: right;
-        }
-    </style>
-
+  <!-- =======================================================
+  * Template Name: MyResume - v2.2.0
+  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
-<body onload="showDateTime()">
+<body>
 
-    <div style="text-align: center; font-family:courier,arial,helvetica;">
+  <!-- ======= Mobile nav toggle button ======= -->
+  <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
 
-        <img src="img/jana.jpg" style="border-radius:100%; alt:Avatar; width:10%; height:20%" />
-        <h1>Janarthanan Shanmugam</h1>
-        <h5>
-            <a href="mailto:janarthanan.shanmugam@gmail.com">
-                janarthanan.shanmugam@gmail.com
-            </a>
-        </h5>
-        <h5>Mobile:+917904487944</h5>
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex flex-column justify-content-center">
+
+    <nav class="nav-menu">
+      <ul>
+        <li class="active"><a href="#hero"><i class="bx bx-home"></i> <span>Home</span></a></li>
+        <li><a href="#about"><i class="bx bx-user"></i> <span>About</span></a></li>
+        <li><a href="#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+        <li><a href="#contact"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+      </ul>
+    </nav><!-- .nav-menu -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+      <h1>Janarthanan Shanmugam</h1>
+      <p>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer"></span></p>
+      <div class="social-links">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
     </div>
+  </section><!-- End Hero -->
 
-    <h2>Objective</h2>
-    <p>To secure permanent employment with Persistent Systems, where I can utilize my skills and experience to the
-        maximum.</p>
+  <main id="main">
 
-    <h2>Work Experience</h2>
-    <h3>Software Trainee at Persistent Systems Pvt. Ltd</h3>
-    <li>Developing Kesar – Expense Tracker Mobile
-        Application.</li>
-    <li>Working on Ionic 5, Angular, TypeScript for Mobile
-        Application.</li>
-    <li>Built website using HTML5, Bootstrap CSS, JavaScrip.</li>
-    <li>Internationalization and Responsible for manual
-        testing of Website and Mobile Application.</li>
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
 
-    <h2>Skills</h2>
-    <ul>
-        <li>HTML5</li>
-        <li>Ionic</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Angular</li>
-        <li>Node JS</li>
-    </ul>
-    <h2>
-        <p>Education</p>
-    </h2>
-    <div style="overflow-x:auto;">
-        <table>
-            <tr>
-                <th>Course</th>
-                <th>Institution</th>
-                <th>Year of passing</th>
-                <th>Percentage(%)</th>
-            </tr>
-            <tr>
-                <td>MCA</td>
-                <td>Muthayammal Engineering college </td>
-                <td>2017</td>
-                <td>69.67%</td>
-            </tr>
-            <tr>
-                <td>BCA</td>
-                <td>Selvamm college of Arts and Science</td>
-                <td>2014</td>
-                <td>64</td>
-            </tr>
-            <tr>
-                <td>HSC</td>
-                <td>Govt.Hr.Sec.School</td>
-                <td>2011</td>
-                <td>80.75</td>
-            </tr>
-            <tr>
-                <td>SSLC</td>
-                <td>Govt.Hr.Sec.School</td>
-                <td>2009</td>
-                <td>90.6</td>
-            </tr>
-        </table>
+        <div class="section-title">
+          <h2>About</h2>
+          <p>I am a Web Developer</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4">
+            <img src="assets/img/jana.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content">
+            <h3>UI/UX Designer &amp; Web Developer.</h3>
+            <p class="font-italic">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore
+              magna aliqua.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="icofont-rounded-right"></i> <strong>City:</strong> City : Kalangani, India</li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="icofont-rounded-right"></i> <strong>Degree:</strong> Master</li>
+                  <li><i class="icofont-rounded-right"></i> <strong>Email:</strong> janarthanan.shanmugam@gmail.com</li>
+                </ul>
+              </div>
+            </div>
+            <p>
+              Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et
+              ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
+              Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque.
+              Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
+            in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill">HTML <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">CSS <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">JavaScript <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill">Ionic <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Angular<i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Node JS <i class="val">55%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+          <p>To secure permanent employment with Persistent Systems, where I can utilize my skills and experience to the
+            maximum.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <h3 class="resume-title">Sumary</h3>
+            <div class="resume-item pb-0">
+              <h4>Janarthanan Shanmugam</h4>
+              <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and
+                  developing user-centered digital/print marketing material from initial concept to final, polished
+                  deliverable.</em></p>
+              <ul>
+                <li>Kalangani , India</li>
+                <li>(+91)7904487944</li>
+                <li>janarthanan.shanmugam@gmail.com</li>
+              </ul>
+            </div>
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>MCA</h4>
+              <h5>84%</h5><br>
+              <h5>2014 - 2016</h5>
+              <p><em>Muthayammal Engineering College</em></p>
+            </div>
+            <div class="resume-item">
+              <h4>BCA</h4>
+              <h5>64%</h5><br>
+              <h5>2011 - 2014</h5>
+              <p><em>Selvamm Arts &amp; Science College</em></p>
+            </div>
+            <div class="resume-item">
+              <h4>HSC</h4>
+              <h5>80.75%</h5><br>
+              <h5>2010 - 2011</h5>
+              <p><em>Govt Hr Sec School</em></p>
+            </div>
+            <div class="resume-item">
+              <h4>SSLC</h4>
+              <h5>90.6%</h5><br>
+              <h5>2008 - 2009</h5>
+              <p><em>Govt Hr Sec School</em></p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4><b>Software Trainee</b> Persistent Systems Pvt. Ltd.</h4>
+              <h5>2020 - Present</h5>
+              <p><em>Software Development</em></p>
+              <h4>Current Project</h4>
+              <ul>
+                <li>Developing Kesar – Expense Tracker Mobile Application.</li>
+                <li>Working on Ionic 5, Angular, TypeScript for Mobile Application. </li>
+                <li>Built website using HTML5, Bootstrap CSS, JavaScript.</li>
+                <li>Internationalization and Responsible for manual testing of Website and Mobile Application.</li>
+                <li>Enabled Push Notification.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Resume Section -->
+
+
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+        </div>
+
+        <div class="row mt-1">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="icofont-google-map"></i>
+                <h4>Location:</h4>
+                <p>Kalangani, India</p>
+              </div>
+
+              <div class="email">
+                <i class="icofont-envelope"></i>
+                <h4>Email:</h4>
+                <p>janarthanan.shanmugam@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="icofont-phone"></i>
+                <h4>Call:</h4>
+                <p>+917904487944</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="form-row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                    data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-6 form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                    data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                  data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required"
+                  data-msg="Please write something for us" placeholder="Message"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3>Janarthanan Shanmugam</h3>
+      <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
+      <div class="social-links">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>MyResume</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: [license-url] -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
     </div>
+  </footer><!-- End Footer -->
 
-    <h2>Achievements</h2>
-    <li>Java Developer - Active Contributor</li>
-    <li>Participating National Seminar</li>
-    <li>Winner of Cricket Tournament</li>
-    <li>Participation of Debugging</li>
+  <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
+  <div id="preloader"></div>
 
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
 
-    <h2>Declation</h2>
-    <p>I solemnly declare that all the information furnished in this document is free of errors to the best of my
-        knowledge.
-    </p>
-    <p class="right"><b>Yours Faithfully,</b></p>
-    <p class="right">Janarthanan Shanmugam</p>
-    <p class="right"><b>Place:</b> Kalangani</p>
-    <p class="right">
-        <b>Date:</b>
-        <span id="datetime">dd-mm-yyyy></span>
-    </p>
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
