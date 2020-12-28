@@ -4,3 +4,7 @@ Generate new token->Note(enter {name})->Select repo box->Generate token
 Git Clone:
 
 git clone https://<token>@github.com/janashan/janashan.github.io.git
+
+git add filename
+git commit -m "message"
+git push -f
