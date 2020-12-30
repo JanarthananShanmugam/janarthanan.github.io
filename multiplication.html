@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<head>
+    <title>
+        Multiplication
+    </title>
+    <script>
+        function display() {
+            var number = document.getElementById("number").value;
+            var count = document.getElementById("count").value;
+
+            for (let i = 1; i <= count; i++) {
+                var table = document.getElementById("myTable");
+
+                var row = table.insertRow(table.rows.length);
+                var cell1 = row.insertCell(0);
+                var cell2 = row.insertCell(1);
+                var cell3 = row.insertCell(2);
+                var cell4 = row.insertCell(3);
+                var cell5 = row.insertCell(4);
+
+                cell1.innerHTML = i;
+                cell2.innerHTML = "x";
+                cell3.innerHTML = number;
+                cell4.innerHTML = "=";
+                cell5.innerHTML = i*number;
+
+            }
+            // result += i + "*" + number + "=" + i * number + "<br>";
+        }
+        document.getElementById("myTable").innerHTML
+        
+    </script>
+</head>
+
+<body>
+    <input type="text" placeholder="Enter Table Number" id="number"><br><br>
+    <input type="text" placeholder="Enter Count" id="count"><br><br>
+    <button onclick="display()">Generate Multiplication Table</button>
+    <table id="myTable" border="1" style="width: 100%; text-align: center;">
+        
+    </table>
+
+</body>
+
+</html>
