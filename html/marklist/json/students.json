@@ -1,0 +1,34 @@
+[
+    {
+       "name": "Janarthanan Shanmugam",
+       "tamil": "92",
+       "english": "78",
+       "math": "96",
+       "science": "92",
+       "social": "92"
+    },
+    {
+       "name": "Kovarthini",
+       "tamil": "89",
+       "english": "81",
+       "math": "83",
+       "science": "83",
+       "social": "70"
+    },
+    {
+       "name": "Vignesh",
+       "tamil": "88",
+       "english": "75",
+       "math": "89",
+       "science": "82",
+       "social": "63"
+    },
+    {
+       "name": "Nithiya",
+       "tamil": "80",
+       "english": "75",
+       "math": "98",
+       "science": "100",
+       "social": "97"
+    }
+ ]

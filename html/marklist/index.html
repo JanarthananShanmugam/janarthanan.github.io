@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JSON</title>
+
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        th {
+            text-align: center;
+        }
+    </style>
+
+    <script>
+        function display() {
+            var table = document.getElementById("myTable");
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    var students = JSON.parse(this.responseText);
+                    for (i = 0; i < students.length; i++) {
+                        var table = document.getElementById("myTable");
+                        var student = students[i];
+                        var row = table.insertRow(i + 1);
+                        var cell1 = row.insertCell(0);
+                        var cell2 = row.insertCell(1);
+                        var cell3 = row.insertCell(2);
+                        var cell4 = row.insertCell(3);
+                        var cell5 = row.insertCell(4);
+                        var cell6 = row.insertCell(5);
+                        var cell7 = row.insertCell(6);
+                        var cell8 = row.insertCell(7);
+
+                        cell1.innerHTML = student.name;
+                        cell2.innerHTML = student.tamil;
+                        cell3.innerHTML = student.english;
+                        cell4.innerHTML = student.math;
+                        cell5.innerHTML = student.science;
+                        cell6.innerHTML = student.social;
+                        var total = student.tamil + student.english + student.math + student.science + student
+                            .social;
+                        var average = (total / 5).toFixed(2);
+                        cell7.innerHTML = total;
+                        cell8.innerHTML = average;
+
+                    }
+                }
+            };
+            xmlhttp.open("GET", "students.json", true);
+            xmlhttp.send();
+        }
+    </script>
+</head>
+
+<body onload="display()">
+
+    <table border="1" id="myTable">
+        <th>Name</th>
+        <th>Tamil</th>
+        <th>English</th>
+        <th>Maths</th>
+        <th>Science</th>
+        <th>Social</th>
+        <th>Total</th>
+        <th>%</th>
+    </table>
+
+</body>
+
+</html>

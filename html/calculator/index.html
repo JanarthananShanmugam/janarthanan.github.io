@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+
+    <script>
+        //function that display value 
+        function dis(val) {
+            document.getElementById("value").value += val
+        }
+
+        //function that evaluates the digit and return result 
+        function solve() {
+            let x = document.getElementById("value").value
+            let y = eval(x)
+            document.getElementById("value").value = y
+        }
+
+        //function that clear the display 
+        function clr() {
+            document.getElementById("value").value = ""
+        }
+    </script>
+
+    <style>
+        input[type="button"] {
+            width: 100%;
+        }
+        .dark-gray{
+            background-color: rgb(190, 189, 189);
+        }
+        .light-gray{
+            background-color: rgb(226, 219, 219);
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1">
+        <tr>
+            <td colspan="4"><input type="text" id="value" /></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="+" class="dark-gray" onclick="dis('+')"></td>
+            <td><input type="button" value="-" class="dark-gray" onclick="dis('-')"></td>
+            <td><input type="button" value="x" class="dark-gray" onclick="dis('x')"></td>
+            <td><input type="button" value="/" class="dark-gray" onclick="dis('/')"></td>
+        </tr>
+
+        <tr>
+            <td><input type="button" value="7" class="light-gray" onclick="dis('7')"></td>
+            <td><input type="button" value="8" class="light-gray" onclick="dis('8')"></td>
+            <td><input type="button" value="9" class="light-gray" onclick="dis('9')"></td>
+            <td rowspan="4"><input type="button" style="height: 100px; background-color: rgb(99, 148, 223);" value="=" onclick="solve()"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" class="light-gray" onclick="dis('4')"></td>
+            <td><input type="button" value="5" class="light-gray" onclick="dis('5')"></td>
+            <td><input type="button" value="6" class="light-gray" onclick="dis('6')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" class="light-gray" onclick="dis('1')"></td>
+            <td><input type="button" value="2" class="light-gray" onclick="dis('2')"></td>
+            <td><input type="button" value="3" class="light-gray" onclick="dis('3')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="0" class="light-gray" onclick="dis('0')"></td>
+            <td><input type="button" value="." class="light-gray" onclick="dis('.')"></td>
+            <td><input type="button" value="c" class="light-gray" onclick="clr()"></td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
